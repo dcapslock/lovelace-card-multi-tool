@@ -1,0 +1,26 @@
+{
+  "name": "lovelace-card-multi-tool",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"src/**/*.ts\"",
+    "build": "tsup",
+    "watch": "pnpm run build --watch src"
+  },
+  "keywords": [],
+  "author": "Darryn Capes-Davis (@dcapslock)",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.3",
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "terser": "^5.43.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.0"
+  },
+  "dependencies": {
+    "home-assistant-query-selector": "^4.3.0"
+  }
+}
