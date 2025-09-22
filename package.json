@@ -9,7 +9,7 @@
     "prettier": "prettier src --check",
     "prettier:fix": "prettier src --check --write",
     "build": "tsup",
-    "watch": "npm run build --watch src"
+    "watch": "tsup --watch src"
   },
   "keywords": [],
   "author": "Darryn Capes-Davis (@dcapslock)",

@@ -22,7 +22,8 @@
         "yzhang.markdown-all-in-one",
         "esbenp.prettier-vscode",
         "bierner.lit-html",
-        "cschleiden.vscode-github-actions"
+        "cschleiden.vscode-github-actions",
+        "segevfiner.tsup-problem-matcher"
       ],
       "settings": {
         "files.eol": "\n",
