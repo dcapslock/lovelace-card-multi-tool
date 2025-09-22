@@ -8,5 +8,6 @@ lovelace:
       filename: test/ui-lovelace.yaml
 
 homeassistant:
+  country: AU
   media_dirs:
     localmedia: /config/www/workspace/test/www/media-source/
