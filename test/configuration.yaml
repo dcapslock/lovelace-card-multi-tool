@@ -11,3 +11,56 @@ homeassistant:
   country: AU
   media_dirs:
     localmedia: /config/www/workspace/test/www/media-source/
+
+input_datetime:
+  both_date_and_time:
+    name: Input with both date and time
+    has_date: true
+    has_time: true
+  only_date:
+    name: Input with only date
+    has_date: true
+    has_time: false
+  only_time:
+    name: Input with only time
+    has_date: false
+    has_time: true
+
+virtual:
+  yaml_config: true
+
+switch:
+  - platform: virtual
+    name: "!Bed Switch"
+  - platform: virtual
+    name: "!Kitchen Switch"
+
+light:
+  - platform: virtual
+    name: "!Bed Light"
+    support_color: true
+  - platform: virtual
+    name: "!Kitchen Lights"
+    support_color: true
+  - platform: virtual
+    name: "!Ceiling Lights"
+    support_color: true
+
+cover:
+  - platform: virtual
+    name: "!Kitchen Cover"
+    initial_value: "closed"
+    open_close_duration: 10
+    open_close_tick: 1
+
+sensor:
+  - platform: virtual
+    name: "!Bedroom Temp"
+    unit_of_measurement: "°C"
+    initial_value: 22.0
+    class: temperature
+  - platform: virtual
+    name: "!Kitchen Temp"
+    unit_of_measurement: "°C"
+    initial_value: 20.0
+    class: temperature
