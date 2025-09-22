@@ -1,0 +1,17 @@
+views:
+  - title: Home
+    type: sections
+    sections:
+      - type: grid
+        cards:
+          - type: 'custom:button-card'
+            color_type: label-card
+            name: Title Card
+            styles:
+              card:
+                - font-weight: bold
+                - text-transform: uppercase
+            section_mode: true
+            grid_options:
+              rows: 1
+              columns: 12
