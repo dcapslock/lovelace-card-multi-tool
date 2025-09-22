@@ -5,6 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "prettier": "pnpm exec prettier src --check",
+    "prettier:fix": "pnpm run prettier src --check --write",
     "build": "tsup",
     "watch": "pnpm run build --watch src"
   },
@@ -15,12 +18,15 @@
   "devDependencies": {
     "@eslint/js": "^9.29.0",
     "eslint": "^9.29.0",
+    "globals": "^16.4.0",
+    "prettier": "3.6.2",
     "terser": "^5.43.1",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.35.0"
   },
   "dependencies": {
-    "home-assistant-query-selector": "^4.3.0"
+    "home-assistant-query-selector": "^4.3.0",
+    "jiti": "^2.5.1"
   }
 }
