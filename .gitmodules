@@ -1,0 +1,3 @@
+[submodule "hass-virtual"]
+	path = hass-virtual
+	url = https://github.com/twrecked/hass-virtual
